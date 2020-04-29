@@ -1,0 +1,10 @@
+{
+  "name": "nodebb-theme-secret-internet-club",
+  "version": "0.0.1",
+  "description": "YA YEET",
+  "main": "theme.less",
+  "keywords": [
+
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,327 @@
+html, body {
+    height: 100%;
+}
+body {
+    background: linear-gradient(280deg, #8f0855 0%, #4b3162 30%, #242124 100%);
+    padding: 0;
+    margin: 0;
+}
+
+h2 a{
+    text-decoration:underline;
+}
+
+.breadcrumb{
+    padding: .75rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+}
+
+.top-banner{
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    width: 100%;
+}
+
+.posts-list .posts-list-item .topic-title {
+    color: #8b949d;
+}
+
+.leftnavmenu{
+    float: left;
+}
+
+.account {
+    margin-top: 3rem;
+}
+.fab.btn-morph{
+    z-index:1000;
+}
+#gdpr_agree_data{
+  display:block !important;
+}
+#gdpr_agree_email{
+  display: block !important;
+}
+.headline{
+    float: left;
+    margin: 0px auto;
+    padding-left: 2rem;
+}
+.dropdown-menu{
+    z-index: 1001;
+}
+
+
+@media screen and (min-width:360px) {
+   .account .cover{
+       height: 50px;
+   }
+  .profile{
+       margin-bottom: -1.5rem;
+       margin-top: 125px;
+   }
+   .dropdown-toggle{
+       z-index:1000;
+       position: relative;
+   }
+   .top-banner{
+    padding-top: 7rem;
+   }
+
+}
+@media screen and (min-width:480px) {
+   .account .cover{
+       height: 60px;
+   }
+   .profile{
+       margin-bottom: -1.5rem;
+       margin-top: 90px;
+   }
+}
+@media screen and (min-width:768px) {
+   .account .cover{
+       height: 100px;
+   }
+   .profile {
+       margin-bottom: -1rem;
+       margin-top: 25px;
+   }
+}
+@media screen and (min-width:768px) {
+   .account .cover{
+       height: 327px;
+   }
+}
+@media screen and (min-width:992px) {
+   .account .cover{
+       height: 327px;
+   }
+   #main-nav{
+    float: right;
+    padding-right: 20rem;
+    }
+}
+
+@media screen and (max-width:992px) {
+.menu-profile{
+    left: 8rem;
+    top: 2.15rem;
+}
+.header {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    background-color: #FC466B;
+    position: fixed;
+    height: 60px!important;
+    overflow: hidden;
+    z-index: 10;
+}
+.main {
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+    margin-top: 60px;
+}
+.mainInner{
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.mainInner div{
+    display:table-cell;
+    vertical-align: middle;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1.25px;
+}
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    margin-top: 60px;
+    transform: translateX(-250px);
+    transition: transform 250ms ease-in-out;
+    background: linear-gradient(180deg, #463C3E 0%, #3F5EFB 100%);
+    z-index: 1001;
+}
+.sidebarMenuInner{
+    margin:0;
+    padding:0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li{
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    width: 100%;
+    height: 9rem;
+}
+.sidebarMenuInner li span{
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+}
+.sidebarMenuInner li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+    z-index: 25;
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    top: 2rem;
+    left: 1rem;
+    height: 1.4rem;
+    width: 1.75rem;
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+.header .forum-title {
+    padding-left: 6rem;
+    margin-top: 0.1rem;
+}
+.menu-profile{
+    height: auto;
+}
+}
+
+@media screen and (min-width:993px) {
+.main {
+    visibility: hidden;
+    display: none;
+}
+.mainInner{
+    visibility: hidden;
+    display: none;
+}
+.mainInner div{
+    visibility: hidden;
+    display: none;
+}
+#sidebarMenu {
+    visibility: hidden;
+    display: none;
+}
+.sidebarMenuInner{
+    visibility: hidden;
+    display: none;
+}
+.openSidebarMenu{
+    visibility: hidden;
+    display: none;
+}
+}
+
+.categories .category-children {
+  display: none;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.categories .category-children-item {
+  flex: 1 1 45%;
+  margin-top: 1vh;
+}
+
+.card .title{
+    font-weight: 700;
+}
+
+.group-label{
+    margin-left: 5px;
+    padding: 4px;
+}
+
+.footer-donation{
+    margin: 0 auto;
+    padding-top: 105px;
+    padding-left: 50%;
+    display: inline-block;
+}
+.account .profile .profile-meta .timeago{
+    color: #DDD;
+}
+
+.account .profile .profile-meta strong{
+    color: #336699;
+}
+
+.navbar{
+    background-image: linear-gradient(#21538c,#204b77 60%,#ce1a5e);
+}
+.navbar .navbar-nav li a{
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.categories .category-children small, .category .category-children small, .subcategory .category-children small{
+    text-decoration: underline;
+}
+
